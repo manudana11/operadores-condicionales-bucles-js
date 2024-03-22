@@ -9,7 +9,7 @@ let booleanoOr = booleano1 || booleano2;
 
 let booleanoNot = !booleano1;
 
-let booleanoMix0 = booleano1 || booleano2 && booleano1 || !booleano1 && !booleano2;
+let booleanoMix0 = (booleano1 || booleano2) && (booleano1 || (!booleano1 && !booleano2));
 
 // 2. Operadores
 
@@ -25,7 +25,7 @@ console.log(valorResto);
 let a = 9;
 let b = '9';
 
-if (a === b) {
+if (a == b) {
     console.log('Son iguales');
 } else {
     console.log('No son iguales');
@@ -83,7 +83,7 @@ let i = 1;
 while (i <= 20) {
     i++;
     if (i % 3 === 0) {
-        console.log('Patata');
+        console.log('Patata'+i);
     }
 }
 
